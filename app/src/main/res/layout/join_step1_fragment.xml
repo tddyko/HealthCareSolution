@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 회원가입 1/3-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/common_parent_style"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeUserEmailGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/login_id_edittext"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:hint="@string/join_step1_id_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                <ImageView
+                    android:id="@+id/login_id_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvUserEmail"
+                style="@style/member_textview_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/join_step1_id_error_textview"
+                style="@style/common_textview_validate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/join_step1_id_error"
+                android:visibility="invisible"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/join_step1_pwd_edittext1"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:hint="@string/join_step1_pwd_hint1"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    />
+
+                <ImageView
+                    android:id="@+id/join_step1_pwd_imageview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/join_step1_pwd_edittext2"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:hint="@string/join_step1_pwd_hint2"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/join_step1_pwd_imageview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/join_step1_pwd_error_textview"
+                style="@style/common_textview_validate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/join_step1_pwd_error"
+                android:visibility="invisible"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/join_step1_name_edittext"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:hint="@string/join_step1_name_hint2"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/join_step1_name_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/join_step1_name_error_textview"
+                style="@style/common_textview_validate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_step1_dont_special_word"
+                android:visibility="invisible"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/join_step1_phone_num_edittext"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:hint="@string/join_step1_phone_num_hint"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/join_step1_phone_num_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/join_step1_phone_num_error_textview"
+                style="@style/common_textview_validate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_step1_phone_num_error2"
+                android:visibility="invisible"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/join_step1_city_map"
+                    style="@style/common_edittext_style"
+                    android:layout_width="match_parent"
+                    android:hint="@string/join_step1_city_map"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/join_step1_city_map_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/join_step1_city_error_textview"
+                style="@style/common_textview_validate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_step1_city_error"
+                android:visibility="invisible"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/join_step1_agreegroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/join_step1_contract_textview"
+                        style="@style/common_textview_fields"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step1_contract1" />
+
+                    <CheckBox
+                        android:id="@+id/join_step1_checkbox1"
+                        style="@style/common_checkbox_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/colorDarkGray" />
+
+
+                    <TextView
+                        android:id="@+id/join_step1_personal_info_textview"
+                        style="@style/common_textview_fields"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step1_contract2" />
+
+                    <CheckBox
+                        android:id="@+id/join_step1_checkbox2"
+                        style="@style/common_checkbox_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/join_step1_contract_error_textview"
+                    style="@style/common_textview_validate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/join_step1_contract_error"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <com.greencross.greencare.component.CFontButton
+                android:id="@+id/next_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_on_off"
+                android:enabled="false"
+                android:text="@string/text_next"
+                android:textColor="@color/colorWhite"
+                app:font="@string/NotoSansKRBold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

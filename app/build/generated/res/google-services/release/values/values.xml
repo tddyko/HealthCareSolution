@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">789010562305-rd8c3crl78d794ohbplhcdnhqskad9ku.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://green-care-8a4e8.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">789010562305</string>
+    <string name="google_api_key" translatable="false">AIzaSyBRsOr0nwLbGNl63hk_56tRXHrtqhhuTVg</string>
+    <string name="google_app_id" translatable="false">1:789010562305:android:61d417854cab4ea6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBRsOr0nwLbGNl63hk_56tRXHrtqhhuTVg</string>
+    <string name="google_storage_bucket" translatable="false">green-care-8a4e8.appspot.com</string>
+</resources>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 회원가입 2/3-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        style="@style/common_parent_style"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/join_step3_active_type1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/ck_backgroud_bule"
+                android:padding="5dp"
+                android:duplicateParentState="true">
+
+                <CheckBox
+                    android:id="@+id/join_step3_active_type1_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:button="@drawable/checkbox_blue"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <com.greencross.greencare.component.CFontTextView
+                        style="@style/common_textview_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step3_active_type1"
+                        app:font="@string/NotoSansKRBold"/>
+
+                    <com.greencross.greencare.component.CFontTextView
+                        android:id="@+id/textView5"
+                        style="@style/common_textview_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step3_active_type1_desc"
+                        android:textSize="13sp"
+                        app:font="@string/NotoSansKRRegular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/join_step3_active_type2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/ck_backgroud_yell"
+                android:padding="5dp"
+                android:duplicateParentState="true">
+
+                <CheckBox
+                    android:id="@+id/join_step3_active_type2_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:button="@drawable/checkbox_yell"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <com.greencross.greencare.component.CFontTextView
+                        style="@style/common_textview_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step3_active_type2"
+                        app:font="@string/NotoSansKRBold"/>
+
+                    <com.greencross.greencare.component.CFontTextView
+                        style="@style/common_textview_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step3_active_type2_desc"
+                        android:textSize="13sp"
+                        app:font="@string/NotoSansKRRegular"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/join_step3_active_type3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/ck_backgroud_red"
+                android:padding="5dp"
+                android:duplicateParentState="true">
+
+                <CheckBox
+                    android:id="@+id/join_step3_active_type3_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:button="@drawable/checkbox_red"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <com.greencross.greencare.component.CFontTextView
+                        style="@style/common_textview_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step3_active_type3"
+                        app:font="@string/NotoSansKRBold"/>
+
+                    <com.greencross.greencare.component.CFontTextView
+                        style="@style/common_textview_fields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/join_step3_active_type3_desc"
+                        android:textSize="13sp"
+                        app:font="@string/NotoSansKRRegular"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/join_step3_have_disease"
+            style="@style/common_textview_fields"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorAntiFlashWhite">
+                
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkGray"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <CheckBox
+                    android:id="@+id/join_step3_virus_type4_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/common_checkbox_style"
+                    android:text="@string/join_step3_hyperlipidemia_type"/>
+
+                <CheckBox
+                    android:id="@+id/join_step3_virus_type1_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/common_checkbox_style"
+                    android:text="@string/join_step3_high_blood"/>
+                <CheckBox
+                    android:id="@+id/join_step3_virus_type2_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/common_checkbox_style"
+                    android:text="@string/join_step3_no1_diabetes"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <CheckBox
+                    android:id="@+id/join_step3_virus_type3_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/common_checkbox_style"
+                    android:text="@string/join_step3_no2_diabetes"/>
+
+                <CheckBox
+                    android:id="@+id/join_step3_virus_type5_checkbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/common_checkbox_style"
+                    android:text="@string/text_dont_have"/>
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/common_checkbox_style"
+                    android:visibility="invisible"
+                    android:text="@string/text_dont_have"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkGray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/join_step3_medicen_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/join_step3_question"
+                style="@style/common_textview_fields"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDarkGray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@color/colorAntiFlashWhite">
+
+                    <RadioGroup
+                        android:id="@+id/join_step3_taking_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/join_step3_taking_yes_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_yes"
+                            style="@style/common_checkbox_style"/>
+
+                        <RadioButton
+                            android:id="@+id/join_step3_taking_no_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_no"
+                            style="@style/common_checkbox_style"/>
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            style="@style/common_checkbox_style"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDarkGray"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/join_step3_do_you_smoke"
+            style="@style/common_textview_fields"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/colorAntiFlashWhite">
+
+                <RadioGroup
+                    android:id="@+id/join_step3_smoking_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/join_step3_smoking_yes_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_yes"
+                        style="@style/common_checkbox_style"/>
+
+                    <RadioButton
+                        android:id="@+id/join_step3_smoking_no_radio_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_no"
+                        style="@style/common_checkbox_style"/>
+
+                    <RadioButton
+                        style="@style/common_checkbox_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_yes"
+                        android:visibility="invisible" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkGray"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/join_step3_error_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="@string/join_step3_error_validation2"
+            style="@style/common_textview_validate"
+            android:visibility="invisible"/>
+
+        <com.greencross.greencare.component.CFontButton
+            android:id="@+id/complete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_on_off"
+            android:enabled="false"
+            android:text="@string/join_step3_complete"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="NotoSansKR-Bold"/>
+
+    </LinearLayout>
+</ScrollView>

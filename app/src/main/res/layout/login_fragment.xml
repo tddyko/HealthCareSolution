@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 로그인 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/common_fill_style"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="28"
+        android:background="@color/colorMain"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="33"
+            android:gravity="center_horizontal">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Green CARE"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="38sp"
+                app:font="@string/KelsonSansBold"/>
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_title"
+                android:text="Your health Our dream!"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:font="@string/KelsonSansLight"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="72"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="vertical">
+
+            <com.greencross.greencare.component.CFontEditText
+                android:id="@+id/login_id_edittext"
+                style="@style/common_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/login_id_hint"
+                android:inputType="textEmailAddress"
+                app:font="@string/KelsonSansRegular"/>
+
+            <com.greencross.greencare.component.CFontEditText
+                android:id="@+id/login_pwd_edittext"
+                style="@style/common_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                app:font="@string/KelsonSansRegular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="horizontal">
+
+                    <com.greencross.greencare.component.CFontCheckBox
+                        android:id="@+id/login_auto_login_checkbox"
+                        style="@style/common_checkbox_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_auto_login_setting" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="horizontal">
+
+                    <com.greencross.greencare.component.CFontCheckBox
+                        android:id="@+id/login_save_id_checkbox"
+                        style="@style/common_checkbox_style"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/login_save_id" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:paddingTop="25dp">
+
+            <com.greencross.greencare.component.CFontButton
+                android:id="@+id/login_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_login"
+                android:text="@string/login_en"
+                android:textColor="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp">
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/login_find_id_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_id"
+                    android:textColor="@color/colorMain"
+                    android:fontFamily="Griffy-Regular"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    app:font="@string/KelsonSansBold"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:fontFamily="Griffy-Regular"
+                    android:textSize="14sp"
+                    android:text=" or "
+                    app:font="@string/KelsonSansRegular"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/login_find_pwd_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_pwd"
+                    android:textColor="@color/colorMain"
+                    android:fontFamily="Griffy-Regular"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    app:font="@string/KelsonSansBold"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/login_fogot_account_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="14sp"
+                    android:fontFamily="Griffy-Regular"
+                    android:text="@string/login_foget_account"
+                    app:font="@string/KelsonSansRegular"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorDarkGray"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.greencross.greencare.component.CFontTextView
+                    style="@style/common_textview_fields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDark"
+                    android:text="@string/login_quesion_account"
+                    app:font="@string/KelsonSansRegular"/>
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/login_join_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_register"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/login_member_join"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

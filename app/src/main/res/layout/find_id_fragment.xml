@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 아이디 찾기 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/common_parent_style"
+    android:orientation="vertical">
+
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:text="@string/find_id_phone_num_desc"
+        style="@style/common_textview_value"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.greencross.greencare.component.CFontEditText
+            android:id="@+id/find_id_phone_num1_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/common_edittext_style"
+            android:layout_weight="1"
+            android:maxLength="3"
+            android:hint="010"
+            android:inputType="number"
+            android:padding="0dp"
+            android:gravity="center"/>
+        <com.greencross.greencare.component.CFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            style="@style/common_textview_ea"/>
+
+        <com.greencross.greencare.component.CFontEditText
+            android:id="@+id/find_id_phone_num2_edittext"
+            style="@style/common_edittext_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxLength="4"
+            android:hint="1234"
+            android:inputType="number"
+            android:padding="0dp"
+            android:gravity="center"/>
+
+        <com.greencross.greencare.component.CFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            style="@style/common_textview_ea"/>
+        <com.greencross.greencare.component.CFontEditText
+            android:id="@+id/find_id_phone_num3_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/common_edittext_style"
+            android:layout_weight="1"
+            android:maxLength="4"
+            android:inputType="number"
+            android:hint="5678"
+            android:padding="0dp"
+            android:gravity="center"/>
+
+        <com.greencross.greencare.component.CFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            style="@style/common_textview_ea"/>
+
+        <com.greencross.greencare.component.CFontButton
+            android:id="@+id/find_id_phone_num_confrim_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_confirm"
+            android:text="@string/text_confirm"
+            android:textColor="@color/colorWhite"
+            style="@style/common_textview_fields"/>
+    </LinearLayout>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:id="@+id/join_step1_id_error_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/find_id_dont_regist"
+        style="@style/common_textview_validate"
+        android:visibility="invisible"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:id="@+id/textView45"
+        style="@style/common_textview_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/find_id_result"
+        app:font="@string/NotoSansKRBold"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:id="@+id/find_id_email_edittext"
+        style="@style/common_edittext_style"
+        android:layout_width="match_parent"
+        android:background="@color/colorLightGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <com.greencross.greencare.component.CFontButton
+            android:id="@+id/find_id_complete_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_default"
+            android:text="@string/text_confirm"
+            android:textColor="@color/colorWhite"
+            style="@style/common_textview_fields"/>
+
+        <com.greencross.greencare.component.CFontButton
+            android:id="@+id/find_pwd_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_black"
+            android:text="@string/find_password"
+            android:textColor="@color/colorWhite"
+            style="@style/common_textview_fields"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorDarkGray"
+        android:gravity="center" />
+
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find_id_dont_notice"
+        android:textColor="@color/colorBlack"
+        style="@style/common_textview_value"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/green_cross_health_care"
+        android:textColor="@color/colorBlack"
+        style="@style/common_textview_value"
+        app:font="@string/NotoSansKRBold"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/green_cross_phone_num"
+        android:textColor="@color/colorBlack"
+        style="@style/common_textview_ea"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+{
+	“walk”: [{
+		"idx": "17040109012933",
+		"calories": "107.3",
+		"distance": “153.0",
+		"heartRate": "3.3",
+		"step": "28.5”,
+		"stress": “12”,
+		"regdate": "201704010901"
+	}, {
+		"idx": "17040109012934",
+		"calories": "197.3",
+		"distance": "53.0",
+		"heartRate": "3.3",
+		"step": "24.5",
+		"stress": "16",
+		"regdate": "201704011001"
+	}, {
+		"idx": "17040109012935",
+		"calories": “237.3",
+		"distance": “113.0",
+		"heartRate": "3.3",
+		"step": "24.5",
+		"stress": "16",
+		"regdate": "201704011201"
+	}, {
+		"idx": "17040109012936",
+		"calories": “227.3",
+		"distance": “73.0",
+		"heartRate": "3.3",
+		"step": "24.5",
+		"stress": "16",
+		"regdate": "201704011401"
+	}]
+}
+
+ 

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:minHeight="?attr/actionBarSize">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="GREEN CARE"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_menu_preferences" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textViewPressureTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="혈압:" />
+
+            <ImageView
+                android:id="@+id/imageViewPressureStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_do_not_disturb_on_black_24dp" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textViewPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/imageViewPressureStatus"
+                android:layout_toRightOf="@id/textViewPressureTitle" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textViewBloodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="혈당:" />
+
+            <ImageView
+                android:id="@+id/imageViewBloodStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_do_not_disturb_on_black_24dp" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textViewBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageViewBloodStatus"
+                android:layout_toRightOf="@id/textViewBloodTitle" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textViewWeightTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="체중:" />
+
+            <ImageView
+                android:id="@+id/imageViewWeightStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_do_not_disturb_on_black_24dp" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageViewWeightStatus"
+                android:layout_toRightOf="@id/textViewWeightTitle" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="체중" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70KG" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="키" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="180cm" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21(표준)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기초대사량" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1800kcal" />
+
+        </LinearLayout>
+
+    </LinearLayout
+    -->
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <com.greencross.greencare.sample.CircleProgressBar
+                android:id="@+id/custom_progressBar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:progress="35"
+                app:progressBarThickness="4dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="걸음"/>
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,000"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

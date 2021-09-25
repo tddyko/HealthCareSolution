@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <com.greencross.greencare.component.CFontCheckBox
+        android:id="@+id/main_add_item_checkbox"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:button="@null"
+        android:background="@drawable/ico_sel01"/>
+
+</LinearLayout>

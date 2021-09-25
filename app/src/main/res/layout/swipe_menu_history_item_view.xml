@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="25dp"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/sugar_history_item_type_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="장치"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/sugar_history_item_sugar_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,340"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp" />
+
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/sugar_history_item_mldl_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="mmHg"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/sugar_history_item_before_after_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="식전"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center_vertical|right"
+
+        >
+        <TextView
+            android:id="@+id/sugar_history_item_time_textview"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="0000.00.00 00:00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"
+        >
+        <ImageView
+            android:id="@+id/open_list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:src="@drawable/arrow_left"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

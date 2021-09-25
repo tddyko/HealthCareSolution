@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 비밀번호 찾기 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/common_parent_style"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가입 시 등록하신" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Griffy-Regular"
+                android:text=" 이메일 아이디"
+                android:textColor="@color/colorMain"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:font="@string/NotoSansKRBold"/>
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="와" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Griffy-Regular"
+                android:text="휴대폰 번호"
+                android:textColor="@color/colorMain"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:font="@string/NotoSansKRBold"/>
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="를 입력해주세요." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록된 이메일로 임시 비밀번호를 발송해 드립니다" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.greencross.greencare.component.CFontEditText
+        android:id="@+id/find_pwd_email_edittext"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        style="@style/common_edittext_style"
+        android:inputType="textEmailAddress"
+        android:hint="@string/input_email"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:id="@+id/find_pwd_error_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/find_id_dont_regist"
+        android:visibility="invisible"
+        style="@style/common_textview_validate"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/text_phone_num"
+        style="@style/common_textview_fields"
+        app:font="@string/NotoSansKRBold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.greencross.greencare.component.CFontEditText
+            android:id="@+id/find_pwd_phone_num1_edittext"
+            style="@style/common_edittext_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="010"
+            android:maxLength="3"
+            android:padding="0dp"
+            android:inputType="number"
+            android:gravity="center"/>
+
+        <com.greencross.greencare.component.CFontTextView
+            style="@style/common_textview_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <com.greencross.greencare.component.CFontEditText
+            android:id="@+id/find_pwd_phone_num2_edittext"
+            style="@style/common_edittext_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLength="4"
+            android:hint="1234"
+            android:padding="0dp"
+            android:inputType="number"
+            android:gravity="center"/>
+
+        <com.greencross.greencare.component.CFontTextView
+            android:id="@+id/textView7"
+            style="@style/common_textview_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <com.greencross.greencare.component.CFontEditText
+            android:id="@+id/find_pwd_phone_num3_edittext"
+            style="@style/common_edittext_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLength="4"
+            android:hint="5678"
+            android:padding="0dp"
+            android:inputType="number"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:id="@+id/find_pwd_error_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/find_id_dont_regist"
+        android:visibility="invisible"
+        style="@style/common_textview_validate"/>
+
+    <com.greencross.greencare.component.CFontButton
+        android:id="@+id/confrim_btn"
+        style="@style/common_textview_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_default"
+        android:text="@string/text_confirm"
+        android:textColor="@color/colorWhite"
+        app:font="@string/NotoSansKRBold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorDarkGray"
+        android:gravity="center" />
+
+    <com.greencross.greencare.component.CFontTextView
+        android:id="@+id/CFontTextView4"
+        style="@style/common_textview_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find_password_desc2"
+        android:textColor="@color/colorBlack"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/green_cross_health_care"
+        style="@style/common_textview_value"
+        android:textColor="@color/colorBlack"
+        app:font="@string/NotoSansKRBold"/>
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/green_cross_phone_num"
+        android:textColor="@color/colorBlack"
+        style="@style/common_textview_value"/>
+
+</LinearLayout>

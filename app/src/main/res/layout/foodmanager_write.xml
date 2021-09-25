@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_food_write"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/txtCurrDate"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="2016.12.12"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack" />
+
+
+            <ImageButton
+                android:id="@+id/btn_calLeft"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:layout_alignTop="@+id/txtCurrDate"
+                android:layout_toStartOf="@+id/txtCurrDate"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:src="@drawable/cal_arrow_left" />
+
+            <ImageButton
+                android:id="@+id/btn_calRight"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:layout_alignTop="@+id/txtCurrDate"
+                android:layout_toEndOf="@+id/txtCurrDate"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:src="@drawable/cal_arrow_right" />
+        </RelativeLayout>
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="44dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout_1"
+            android:layout_width="125dp"
+            android:layout_height="103dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_bias="0.703"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_2"
+            app:layout_constraintTop_toTopOf="@+id/guideline_1"
+            android:background="@color/colorWhite">
+
+
+            <!--아침 사진이미지-->
+            <ImageView
+                android:id="@+id/food_breakfest_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
+                >
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/food_breakfest_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_food_round"
+                android:tag="@string/text_breakfast_code">
+
+
+                <ImageView
+                    android:id="@+id/ivImage01"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/tvKcal1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icon_food_after" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvKcal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="13dp"
+                    android:text="0kcal"
+                    android:textColor="@color/colorMain" />
+            </RelativeLayout>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout_2"
+            android:layout_width="125dp"
+            android:layout_height="103dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_1"
+            android:background="@color/colorWhite">
+
+
+            <!--아침간식 사진이미지-->
+            <ImageView
+                android:id="@+id/food_breakfest_snack_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+
+            <RelativeLayout
+                android:id="@+id/food_breakfast_snack_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_food_round"
+                android:tag="@string/text_breakfast_snack_code">
+
+
+                <ImageView
+                    android:id="@+id/ivImage02"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/tvKcal2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icon_food_after" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvKcal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="13dp"
+                    android:text="0kcal"
+                    android:textColor="@color/colorMain" />
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout_3"
+            android:layout_width="125dp"
+            android:layout_height="103dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintHorizontal_bias="0.703"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:background="@color/colorWhite">
+
+            <!--점심 사진이미지-->
+            <ImageView
+                android:id="@+id/food_lunch_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+
+            <RelativeLayout
+                android:id="@+id/food_lunch_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_food_round"
+                android:tag="@string/text_lunch_code">
+
+
+                <ImageView
+                    android:id="@+id/ivImage03"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/tvKcal3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icon_food_after" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvKcal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="13dp"
+                    android:text="0kcal"
+                    android:textColor="@color/colorMain" />
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout_4"
+            android:layout_width="125dp"
+            android:layout_height="103dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            android:background="@color/colorWhite">
+
+            <!--점심간식 사진이미지-->
+            <ImageView
+                android:id="@+id/food_lunch_snack_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+
+            <RelativeLayout
+                android:id="@+id/food_lunch_snack_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_food_round"
+                android:tag="@string/text_lunch_snack_code">
+
+
+                <ImageView
+                    android:id="@+id/ivImage04"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/tvKcal4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icon_food_after" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvKcal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="13dp"
+                    android:text="0kcal"
+                    android:textColor="@color/colorMain" />
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout_5"
+            android:layout_width="125dp"
+            android:layout_height="103dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintHorizontal_bias="0.703"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            android:background="@color/colorWhite">
+
+            <!--저녁 사진이미지-->
+            <ImageView
+                android:id="@+id/food_dinner_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/food_dinner_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_food_round"
+                android:tag="@string/text_dinner_code">
+
+
+                <ImageView
+                    android:id="@+id/ivImage05"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/tvKcal5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icon_food_after" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvKcal5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="13dp"
+                    android:text="0kcal"
+                    android:textColor="@color/colorMain" />
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout_6"
+            android:layout_width="125dp"
+            android:layout_height="103dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            android:background="@color/colorWhite">
+
+            <!--저녁간식 사진이미지-->
+            <ImageView
+                android:id="@+id/food_dinner_snack_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+
+            <RelativeLayout
+                android:id="@+id/food_dinner_snack_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_food_round"
+                android:tag="@string/text_dinner_snack_code">
+
+
+                <ImageView
+                    android:id="@+id/ivImage06"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/tvKcal6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/icon_food_after" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvKcal6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="13dp"
+                    android:text="0kcal"
+                    android:textColor="@color/colorMain" />
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.686"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_2"
+            app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout_5">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="저녁"
+                android:textAlignment="textEnd" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/tvTime03"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="-분"
+                android:textColor="@color/colorMain" />
+
+            <ImageView
+                android:id="@+id/icon_time_dinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:src="@drawable/icon_time"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.313"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout_6">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="저녁 간식"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.313"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout_4">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="점심 간식"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.745"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_2"
+            app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout_3">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="점심"
+                android:textAlignment="textEnd" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/tvTime02"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="-분"
+                android:textColor="@color/colorMain"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout_2">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="아침 간식"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.745"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_2"
+            app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout_1">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="아침"
+                android:textAlignment="textEnd" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/tvTime01"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="-분"
+                android:textColor="@color/colorMain"
+                />
+
+            
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

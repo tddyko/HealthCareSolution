@@ -1,0 +1,3 @@
+//include ':app', 'CardView', 'GoogleFitnessHistory', 'MPChartExample',':MPChartLib'
+include ':app', 'GoogleFitnessHistory' //'CardView', ':MPChartLib', 'MPChartExample'
+//include ':demoSlidingDrawer'

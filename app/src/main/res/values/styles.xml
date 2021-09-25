@@ -1,0 +1,276 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme" parent="android:Theme.Material">-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- BaseApplication 에 기본 폰트 적용 코드가 있음 default를 커스텀 폰트로 변환 해서 사용함 (Kelson-Sans-Regular.otf)-->
+        <!--<item name="android:typeface">default</item>-->
+
+
+        <!--<item name="android:actionBarStyle">@null</item>-->
+
+        <item name="android:editTextStyle">@style/common_edittext_style</item>
+        <item name="android:textViewStyle">@style/common_textview_basic</item>
+
+        <item name="actionBarStyle">@style/common_actionbar_style</item>
+
+        <!-- ActionBar option menu button -->
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+    </style>
+
+    <style name="Widget.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/icon_setting</item>
+        <item name="android:background">@color/colorMain</item>
+        <item name="android:id">@id/action_bar_option_menu_button</item>
+    </style>
+    <!-- 최상단 프레임  -->
+    <style name="common_fill_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <!-- 최상단 프레임  -->
+    <style name="common_parent_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!-- 에디터박스 -->
+    <style name="common_edittext_style" parent="@android:style/Widget.EditText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+        <item name="android:background">@drawable/edittext_box</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+
+    <!-- 체크박스 -->
+    <style name="common_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:scaleX">1.3</item>
+        <item name="android:scaleY">1.3</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorFields</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+        <item name="android:button">@drawable/checkbox_box</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+    </style>
+
+    <!--항목타이틀 기본 -->
+    <style name="common_textview_basic" parent="@android:style/Widget.TextView">
+    </style>
+
+    <!--항목타이틀-->
+    <style name="member_textview_fields" parent="common_textview_basic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+    <!--항목타이틀-->
+    <style name="common_textview_fields" parent="common_textview_basic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+
+    <!--항목타이틀(선택)-->
+    <style name="common_textview_selfields" parent="common_textview_basic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorMain</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+
+    <!--항목 값-->
+    <style name="common_textview_value" parent="common_textview_basic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+
+    </style>
+
+    <!--validate 값 노출 -->
+    <style name="common_textview_validate" parent="common_textview_basic">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:fontFamily">Kelson-Sans-Regular</item>
+
+    </style>
+
+
+    <style name="common_textview_dark_small" parent="common_textview_basic">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorFields</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+
+    <style name="common_textview_dark_nobottom" parent="common_textview_basic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorFields</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+    <style name="common_textview_dark" parent="common_textview_basic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorFields</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+
+    <style name="common_textview_dark_nomargin" parent="common_textview_basic">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorFields</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+    <style name="common_textview_ea" parent="common_textview_basic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorLightBlack</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:fontFamily">Griffy-Regular</item>
+    </style>
+
+    <style name="common_actionbar_style" parent="Base.Widget.AppCompat.Light.ActionBar">
+    </style>
+
+    <style name="common_button_modal_close" parent="Base.TextAppearance.AppCompat.Button">
+        <!--<item name="android:textStyle">bold</item>-->
+        <!--<item name="android:textSize">12sp</item>-->
+        <!--<item name="android:textColor">@color/colorLightBlack</item>-->
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:fontFamily">NotoSansKR-Bold</item>-->
+    </style>
+
+    <!-- input button style -->
+    <style name="common_button_input" parent="Base.TextAppearance.AppCompat.Button">
+        <!--<item name="android:textStyle">bold</item>-->
+        <!--<item name="android:textSize">12sp</item>-->
+        <!--<item name="android:textColor">@color/colorLightBlack</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">45dp</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:fontFamily">NotoSansKR-Bold</item>-->
+    </style>
+
+    <!-- Blue/White 라디오 버튼 -->
+    <style name="common_radio_style" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/radio_btn_color</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="common_radio_style_left" parent="common_radio_style">
+        <item name="android:background">@drawable/radio_left</item>
+    </style>
+    <style name="common_radio_style_middle" parent="common_radio_style">
+        <item name="android:background">@drawable/radio_middle</item>
+    </style>
+    <style name="common_radio_style_right" parent="common_radio_style">
+        <item name="android:background">@drawable/radio_right</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/block_color</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+</resources>

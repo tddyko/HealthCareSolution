@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMain">
+    <ImageButton
+        android:id="@+id/action_bar_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/btn_back"
+        android:background="@null"
+        android:padding="15dp"
+        android:layout_centerVertical="true"/>
+
+    <com.greencross.greencare.component.CFontTextView
+        app:font="@string/KelsonSansBold"
+        android:id="@+id/action_bar_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/app_name"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/action_bar_medi_btn"
+            android:layout_width="15dp"
+            android:layout_height="21dp"
+            android:background="@drawable/icon_write_medi"
+            android:padding="15dp"
+            android:layout_marginRight="17dp"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/action_bar_band_step_btn"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:padding="15dp"
+            android:background="@drawable/icon_reflash"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/action_bar_write_step_btn"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:background="@drawable/icon_targget"
+            android:padding="15dp"
+            android:layout_marginRight="13dp"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/action_bar_write_btn"
+            android:layout_width="17dp"
+            android:layout_height="21dp"
+            android:background="@drawable/icon_write_new"
+            android:padding="15dp"
+            android:layout_marginRight="13dp"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/action_bar_device_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/icon_device"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:layout_marginRight="13dp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/action_bar_bluetooth_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/icon_bluetooth"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:layout_marginRight="13dp"
+            />
+
+        <ImageButton
+            android:id="@+id/action_bar_setting_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/icon_setting_text"
+            android:padding="15dp" />
+
+        <com.greencross.greencare.component.CFontButton
+            android:id="@+id/action_bar_save_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/action_bar_save_btn"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/text_save"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/action_bar_block_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/block_color"
+        android:clickable="true"
+        android:visibility="gone"/>
+</RelativeLayout>

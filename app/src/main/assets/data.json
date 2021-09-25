@@ -1,0 +1,7 @@
+{
+  "api_code": "infra_message_write",
+  "insures_code": "300",
+  "idx": "12121212",
+  "mber_sn": "1000",
+  "infra_message": "메세지 내용입니다."
+}

@@ -1,0 +1,47 @@
+{
+	"weight": [{
+		"idx": "17040109012233",
+		"bmr": "197.3",
+		"bodyWater": "53.0",
+		"bone": "3.3",
+		"fat": "24.5",
+		"heartRate": "16",
+		"muscle": "32.6",
+		"obesity": "11.0",
+		"weight": "82.2",
+		"regdate": "201704010901"
+	}, {
+		"idx": "17040109012234",
+		"bmr": "197.3",
+		"bodyWater": "53.0",
+		"bone": "3.3",
+		"fat": "24.5",
+		"heartRate": "16",
+		"muscle": "32.6",
+		"obesity": "11.0",
+		"weight": "82.2",
+		"regdate": "201704011001"
+	}, {
+		"idx": "17040109012235",
+		"bmr": "197.3",
+		"bodyWater": "53.0",
+		"bone": "3.3",
+		"fat": "24.5",
+		"heartRate": "16",
+		"muscle": "32.6",
+		"obesity": "11.0",
+		"weight": "82.2",
+		"regdate": "201704011201"
+	}, {
+		"idx": "17040109012236",
+		"bmr": "197.3",
+		"bodyWater": "53.0",
+		"bone": "3.3",
+		"fat": "24.5",
+		"heartRate": "16",
+		"muscle": "32.6",
+		"obesity": "11.0",
+		"weight": "82.2",
+		"regdate": "201704011401"
+	}]
+}

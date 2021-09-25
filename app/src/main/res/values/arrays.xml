@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_name">
+        <item>서울시</item>
+        <item>부산광역시</item>
+        <item>대구광역시</item>
+        <item>인천광역시</item>
+        <item>광주광역시</item>
+        <item>대전광역시</item>
+        <item>울산광역시</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>충청북도</item>
+        <item>충청남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>제주특별자치도</item>
+    </string-array>
+    <string-array name="location_code">
+        <item>1 </item>
+        <item>2 </item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
+        <item>6 </item>
+        <item>7 </item>
+        <item>8 </item>
+        <item>9 </item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+
+
+    <string-array name="life_food">
+        <item>쌀밥</item>
+        <item>갈비탕</item>
+        <item>설렁탕</item>
+        <item>삼계탕</item>
+        <item>물냉면</item>
+        <item>비빔냉면</item>
+        <item>비빔밥</item>
+        <item>떡국</item>
+        <item>우동</item>
+        <item>탕수육</item>
+        <item>군만두</item>
+        <item>자장면</item>
+        <item>볶음밥</item>
+        <item>짬뽕</item>
+        <item>브라보콘</item>
+        <item>새우깡</item>
+        <item>순대</item>
+        <item>홈런볼</item>
+        <item>초코파이</item>
+        <item>에이스</item>
+        <item>라면</item>
+        <item>프라이드치킨</item>
+        <item>떡볶이</item>
+        <item>빅맥</item>
+        <item>돈가스</item>
+        <item>피자</item>
+        <item>월드콘</item>
+        <item>옛날 팥빙수</item>
+    </string-array>
+    <string-array name="life_food_unit">
+        <item>공기</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>인분</item>
+        <item>개</item>
+        <item>봉지</item>
+        <item>인분</item>
+        <item>봉지</item>
+        <item>개</item>
+        <item>통</item>
+        <item>인분</item>
+        <item>조각</item>
+        <item>인분</item>
+        <item>개</item>
+        <item>인분</item>
+        <item>쪽</item>
+        <item>개</item>
+        <item>인분</item>
+    </string-array>
+    <string-array name="life_food_calorie">
+        <item>300</item>
+        <item>630</item>
+        <item>500</item>
+        <item>630</item>
+        <item>520</item>
+        <item>578</item>
+        <item>500</item>
+        <item>568</item>
+        <item>610</item>
+        <item>616</item>
+        <item>630</item>
+        <item>670</item>
+        <item>617</item>
+        <item>437</item>
+        <item>220</item>
+        <item>440</item>
+        <item>400</item>
+        <item>250</item>
+        <item>160</item>
+        <item>810</item>
+        <item>450</item>
+        <item>210</item>
+        <item>482</item>
+        <item>530</item>
+        <item>553</item>
+        <item>250</item>
+        <item>263</item>
+        <item>534</item>
+    </string-array>
+</resources>

@@ -1,0 +1,360 @@
+<resources>
+    <string name="app_name">그린케어</string>
+
+    <string name="KelsonSansBold">Kelson-Sans-Bold.otf</string>
+    <string name="KelsonSansLight">Kelson-Sans-Light.otf</string>
+    <string name="KelsonSansRegular">Kelson-Sans-Regular.otf</string>
+    <string name="NotoSansKRBold">NotoSansKR-Bold.otf</string>
+    <string name="NotoSansKRMedium">NotoSansKR-Medium.otf</string>
+    <string name="NotoSansKRRegular">NotoSansKR-Regular.otf</string>
+
+    <string name="area_seoul">서울시</string>
+    <string name="area_busan">부산광역시</string>
+    <string name="area_daejeon">대전광역시</string>
+    <string name="area_daegu">대구광역시</string>
+    <string name="area_incheon">인천광역시</string>
+    <string name="area_gwangju">광주광역시</string>
+    <string name="area_ulsan">울산광역시</string>
+    <string name="area_gyeongi">경기도</string>
+    <string name="area_gangwon">강원도</string>
+    <string name="area_chungbuk">충청북도</string>
+    <string name="area_chungnam">충청남도</string>
+    <string name="area_jeonbuk">전라북도</string>
+    <string name="area_jeonnam">전라남도</string>
+    <string name="area_gyeongbuk">경상북도</string>
+    <string name="area_gyeongnam">경상남도</string>
+    <string name="area_jeju">제주특별자치도</string>
+
+
+    <string name="green_cross_health_care">녹십자 헬스케어</string>
+    <string name="text_next">다음</string>
+    <string name="text_yes">네</string>
+    <string name="text_no">아니요</string>
+    <string name="text_dont_have">없음</string>
+    <string name="text_device">장치</string>
+    <string name="text_direct_enter">직접입력</string>
+    <string name="text_setting">설정</string>
+    <string name="message_finish_message">\'뒤로\'버튼 한번 더  누르면 종료됩니다.</string>
+    <string name="message_finish_member">회원가입이 정상적으로 완료되었습니다.</string>
+    <string name="message_finish_emember">수정이 정상적으로 완료되었습니다.</string>
+    <string name="message_nowtime_over">측정시간이 미래일 수 없습니다.</string>
+
+    <string name="text_work">운동</string>
+    <string name="text_water">물</string>
+    <string name="text_food">영양</string>
+    <string name="text_pressure">혈압</string>
+    <string name="text_sugar">혈당</string>
+    <string name="text_weight">체중</string>
+    <string name="text_fat">체지방</string>
+    <string name="text_add">추가</string>
+    <string name="text_main">GREEN CARE</string>
+
+    <string name="text_morning">오전</string>
+    <string name="text_afternoon">오후</string>
+    
+    <string name="text_good">좋음</string>
+    <string name="text_normal">보통</string>
+    <string name="text_bad">나쁨</string>
+    <string name="text_vbad">매우나쁨</string>
+    
+    <string name="text_sun">일</string>
+    <string name="text_mon">월</string>
+    <string name="text_the">화</string>
+    <string name="text_wed">수</string>
+    <string name="text_thu">목</string>
+    <string name="text_fri">금</string>
+    <string name="text_sat">토</string>
+
+    <string name="text_gallery">앨범</string>
+    <string name="text_camera">카메라</string>
+
+
+    <string name="text_alert">알림</string>
+    <string name="text_alert_mesage_delete">삭제하시겠습니까?</string>
+    <string name="text_alert_mesage_disable_edit">장치에서 측정된 데이터는 수정 할 수 없습니다.</string>
+    <string name="text_phone_num">전화번호</string>
+    <string name="text_confirm">확인</string>
+    <string name="text_cancel">취소</string>
+    <string name="text_save">저장</string>
+    <string name="text_modify">수정</string>
+    <string name="text_regist">등록</string>
+    <string name="text_id">아이디</string>
+    <string name="text_pwd">비밀번호</string>
+    <string name="text_sex">성별</string>
+    <string name="text_mail">남자</string>
+    <string name="text_femail">여자</string>
+    <string name="text_birth">생년월일</string>
+    <string name="text_height">신장</string>
+    <string name="text_goal_height">목표 체중</string>
+    <string name="text_centimiter">%,$.2fcm</string>
+    <string name="text_killogram">%,fkg</string>
+    <string name="text_foodafter">식후</string>
+    <string name="text_foodbefore">식전</string>
+    <string name="text_metrytime">측정시간</string>
+    <string name="text_option">(선택사항)</string>
+    <string name="text_contracttool">수축기</string>
+    <string name="text_relaxtool">이완기</string>
+    <string name="text_meditime">투약 시간</string>
+    <string name="text_medi_info_input">투약 정보 입력</string>
+    <string name="text_bloodsugar">혈당</string>
+    <string name="text_weight_manage">체중 관리</string>
+    <string name="text_weight_input">체중 입력</string>
+    <string name="text_pressure_manage">혈압 관리</string>
+    <string name="text_pressure_input">혈압 입력</string>
+    <string name="text_bloodsugar_manage">혈당 관리</string>
+    <string name="text_bloodsugar_input">혈당 입력</string>
+    <string name="text_mediname">약이름</string>
+    <string name="text_daygoalstep">하루 목표 걸음 수</string>
+    <string name="text_dayusecalory">하루 소모 칼로리</string>
+    <string name="text_targetamount">목표량</string>
+    <string name="text_target_modify">목표 수정</string>
+    <string name="text_drinkvolume">마신량</string>
+    <string name="text_drinktime">마신시간</string>
+    <string name="text_datasourceset">데이터 소스 설정</string>
+    <string name="text_googlefit">구글 피트니스</string>
+    <string name="text_croise">Croise URBAN-S</string>
+    <string name="text_more_info">상세정보</string>
+
+    <string name="text_bodyfatrate">체지방률</string>
+    <string name="text_bodyfatvolume">내장지방</string>
+    <string name="text_stomachrate">수분량</string>
+    <string name="text_musclevolume">근육량</string>
+    <string name="text_fooddiary">식사일기</string>
+    <string name="text_breakfast">아침</string>
+    <string name="text_breakfast_code">a</string>
+    <string name="text_lunch">점심</string>
+    <string name="text_lunch_code">b</string>
+    <string name="text_dinner">저녁</string>
+    <string name="text_dinner_code">c</string>
+    <string name="text_wriging">기록하기</string>
+    <string name="text_history">히스토리</string>
+    <string name="text_breakfast_snack">아침간식</string>
+    <string name="text_breakfast_snack_code">d</string>
+    <string name="text_lunch_snack">점심간식</string>
+    <string name="text_lunch_snack_code">e</string>
+    <string name="text_dinner_snack">저녁간식</string>
+    <string name="text_dinner_snack_code">f</string>
+    <string name="text_eattime">식사 시간</string>
+    <string name="text_foodtime">식사 소요 시간</string>
+    <string name="text_minute">분</string>
+    <string name="text_foodnull">기록한 음식이 없습니다.</string>
+    <string name="text_foodtit">음식명</string>
+    <string name="text_health_message">건강 메시지</string>
+    <string name="text_week_avg_balance">주간 영양 섭취 칼로리</string>
+    <string name="text_week_avg_time">주간 평균 식사 소요시간</string>
+    <string name="text_week_nutri_balance">주간 영양 섭취 균형도</string>
+    <string name="text_member_info_modify">가입정보수정</string>
+    <string name="text_medical_examination_modify">문진정보수정</string>
+    <string name="text_active_modify">활동량 / 질환 정보 수정</string>
+    <string name="text_modify_success">수정 하였습니다.</string>
+    <string name="text_regist_fail">등록에 실패 하였습니다.</string>
+    <string name="text_regist_success">등록이 완료 되었습니다.</string>
+    <string name="text_actionbar_one_line_message">상태바 한줄 메시지</string>
+
+    <string name="please_input_valid_value">올바른 값을 입력해 주세요.</string>
+    <string name="you_can_dot_after_number2">소수점 둘째자리 까지 입력 가능합니다.</string>
+
+    <string name="login_auto_login_setting">자동로그인 설정</string>
+    <string name="login_save_id">아이디 저장</string>
+    <string name="login_signed_in">로그인 된 상태</string>
+    <string name="login_signed_out">로그인 안된 상태</string>
+    <string name="text_login">로그인</string>
+    <string name="login_en">Login</string>
+    <string name="login_member_join">회원가입</string>
+    <string name="login_id_hint">ID(E-mail)</string>
+    <string name="login_password_hint">password</string>
+    <string name="login_foget_account">가 기억나지 않으세요?</string>
+    <string name="login_quesion_account">아직 회원이 아니세요?</string>
+
+    <string name="txt_search">검색 결과가 없습니다.</string>
+    <string name="txt_search_null">검색 결과가 없습니다.</string>
+
+    <string name="join_step1_title">가입 정보 입력(1/3)</string>
+    <string name="join_step2_title">가입 정보 입력(2/3)</string>
+    <string name="join_step3_title">가입 정보 입력(3/3)</string>
+    <string name="join_step1_id_hint">ID (이메일 주소 입력)</string>
+    <string name="join_step1_id_error">올바른 이메일 주소를 입력하세요.</string>
+    <string name="join_step1_id_error2">이미 사용중 입니다.</string>
+    <string name="join_step1_pwd_hint1">영문,숫자,특수문자 포함 8~15자리</string>
+    <string name="join_step1_pwd_hint2">암호 확인</string>
+    <string name="join_step1_pwd_error">암호가 일치하지 않습니다.</string>
+    <string name="join_step1_pwd_error_leng8">비밀번호는 영문,숫자,특수문자 포함 8~15자리까지 입니다.</string>
+    <string name="join_step1_pwd_len">최소8자</string>
+    <string name="join_step1_name_hint2">사용자 이름 입력 (최소2자,최대10자)</string>
+    <string name="join_step1_name_error">중복된 이름입니다.</string>
+    <string name="join_step1_name_error2">올바른 정보를 입력해주세요.</string>
+    <string name="join_step1_phone_num_hint">전화번호입력 - 제외</string>
+    <string name="join_step1_phone_num_error">올바른 번호를 입력해주세요.</string>
+    <string name="join_step1_phone_num_error2">중복된 전화 번호 입니다.</string>
+    <string name="join_step1_city_error">지역을 선택해 주세요.</string>
+    <string name="join_step1_dont_special_word">중복된 이름입니다.특수문자는 사용하실 수 없습니다.</string>
+    <string name="join_step1_city_map">지역</string>
+
+    <string name="join_step1_agree">동의합니다.</string>
+    <string name="join_step1_contract1">개인정보\n제공 동의</string>
+    <string name="join_step1_contract1_title">개인정보 제공 동의</string>
+    <string name="join_step1_contract1_msg">본인은 (주)녹십자헬스케어가 ‘그린케어’ 앱을 통해\n다음과 같이 본인의 개인정보를 \n수집/이용하는 것에 동의합니다.\n\n
+                                            1) 수집항목 : 이름, 성별, 생년월일, 휴대폰번호, 거주지역\n
+                                            2) 수집 및 이용목적 : 라이프 검진 서비스 제공\n
+                                            3) 보유기간 및 이용기간 : 개인정보 획득일로부터 서비스 종료 시까지\n\n
+                                            ※위 개인정보 수집 및 이용에 동의하지 않으실 경우, 서비스 이용이 불가합니다.
+    </string>
+    <string name="join_step1_contract2">개인민감정보\n제공 동의</string>
+    <string name="join_step1_contract2_title">개인민감정보 제공 동의</string>
+    <string name="join_step1_contract2_msg">본인은 (주)녹십자헬스케어가 ‘그린케어’ 앱을 통해\n
+이름, 성별, 생년월일, 휴대폰번호, 거주지역의 개인정보 외에 다음의 개인민감정보를 수집/이용하는 것에 동의합니다.\n
+1) 수집항목\n
+①앱 가입 시 :신체정보(키, 체중, 목표체중), 활동량정보, 보유질환, 흡연여부\n
+②앱 이용 중 : 걸음 수, 소모 칼로리, 혈당, 혈압, 체성분, 식사정보, 물음용 정보\n
+2) 수집 및 이용목적 : 목표 칼로리 자동설정,\n
+라이프 검진 서비스의 건강상담 시 활용\n
+3) 보유기간 및 이용기간 : 개인민감정보 획득일로부터 서비스 종료 시까지\n
+※위 개인민감정보 수집 및 이용에 동의하지 않으실 경우, 서비스 이용이 불가합니다.\n
+※개인민감정보는 이용목적 외에 다른 목적으로는 사용되지 않습니다.
+    </string>
+    <string name="join_step1_contract_error">약관에 동의하셔야 합니다.</string>
+
+    <string name="join_inform_step1">가입정보 입력(1/3)</string>
+    <string name="join_inform_step2">가입정보 입력(2/3)</string>
+
+    <string name="id_confirm">아이디를 입력해주세요.</string>
+    <string name="pw_confirm">패스워드를 입력해주세요.</string>
+    <string name="pw_send_fail">비밀번호 발송 실패</string>
+    <string name="login_fail">로그인에 실패 하였습니다.</string>
+
+    <string name="inform_modify_success">정보가 수정 되었습니다.</string>
+    <string name="inform_modify_fail">정보 변경에 실패 하였습니다.</string>
+    <string name="date_input_error">날짜를 입력해 주세요.</string>
+    <string name="time_input_error">시간을 입력해 주세요.</string>
+    <string name="regist_success">등록 되었습니다.</string>
+    <string name="delete_success">삭제 되었습니다.</string>
+    <string name="medi_modify">투약 수정</string>
+    <string name="medi_info_regist">투약 정보를 등록하시겠습니까?</string>
+    <string name="modify_success">수정이 완료 되었습니다.</string>
+    <string name="daily_statistics">일간 통계</string>
+    <string name="weekly_statistics">주간 통계</string>
+    <string name="monthly_statistics">월간 통계</string>
+
+    <string name="presure_systolic_presure_input_error">수축기 혈압을 입력해 주세요.</string>
+    <string name="presure_diastolic_presure_input_error">이완기 혈압을 입력해 주세요.</string>
+    <string name="presure_regist">혈압을 등록하시겠습니까?</string>
+    <string name="presure_modify">혈압 수정</string>
+    <string name="presure_normal">심혈관질환의 발병위험이 가장 낮은 최적의 혈압입니다.</string>
+    <string name="presure_after_one_and_two_step">혈압은 변동이 많고 여러 원인에 의해 상승할 수 있으므로 1~2분 정도 안정을 취하신 후 다시 한번 측정해 보세요.</string>
+    <string name="presure_onestep_and_twostep">혈압은 변동이 많고 여러 원인에 의해 상승할 수 있으므로 3~5분 정도 안정을 취하신 후 다시 한번 측정해 보세요.</string>
+
+    <string name="sugar_input_error">혈당을 입력해 주세요</string>
+    <string name="sugar_regist">혈당을 등록하시겠습니까?</string>
+    <string name="sugar_modify">혈당 수정</string>
+
+    <string name="water_input_error">물 섭취량을 입력해 주세요</string>
+    <string name="water_regist">물 섭취량을 등록하시겠습니까?</string>
+    <string name="water_mpdify">물 수정</string>
+
+    <string name="weight_input_error">체중을 입력해 주세요.</string>
+    <string name="weight_range">체중 입력 범위는 20~300kg 입니다.</string>
+    <string name="weight_fat_range">체지방률 입력 범위는 50% 이하 입니다.</string>
+    <string name="weight_regist">체중을 등록하시겠습니까?</string>
+    <string name="weight_modify">체중 수정</string>
+    
+    <string name="food_meal_time_input">식사시간을 입력해 주세요.</string>
+    <string name="food_add">음식을 추가하여 주세요.</string>
+
+    <string name="step_consumed_calories">활동 소모 칼로리</string>
+    <string name="step_goal_completion_rate">목표 달성률</string>
+    <string name="step_total_activity_time">총 활동 시간</string>
+    <string name="step_activity_calorie_comparison">활동 소모 칼로리 비교</string>
+    <string name="step_maximum_continuous_activity_time">심박수</string>
+    <string name="step_total_steps">총 걸음 수</string>
+    <string name="step_total_travel_distance">총 이동 거리</string>
+    <string name="step_average_stride">평균 보폭</string>
+    <string name="step_daily_consumed_calories_input">하루 소모 칼로리를 입력해 주세요.</string>
+    <string name="step_daily_completion_steps_input">하루 목표 걸음수를 입력해 주세요.</string>
+    <string name="step_daily_consumed_calories_regist">하루 소모 칼로리를 등록하시겠습니까?</string>
+    <string name="step_input_over">하루 소모 칼로리는 최소150kcal 이고 최대1,000kcal 입니다.</string>
+
+    <string name="recent_measurements">최근 측정 (- -)</string>
+    <string name="today_measurements">오늘측정</string>
+
+    <string name="kcal">Kcal</string>
+    <string name="steps">Steps</string>
+    <string name="savemoney">Save Money</string>
+    <string name="kg">Kg</string>
+    <string name="ml">mL</string>
+
+    <string name="input_email">이메일 주소 입력</string>
+    <string name="find_password">비밀번호 찾기</string>
+    <string name="find_id">아이디 찾기</string>
+    <string name="find_password_desc">가입 시 등록하신 이메일 아이디와\n휴대폰 번호를 입력해주세요.\n등록된 이메일로 임시 비밀번호를 발송해 드립니다.</string>
+    <string name="find_password_desc2">발송이 되지 않을 경우 녹십자헬스케어\n고객지원센터로 문의 주시기 바랍니다</string>
+
+    <string name="find_id_phone_num_desc">가입 시 등록하신 휴대폰 번호를 입력해주세요.</string>
+    <string name="find_id_result">검색 결과</string>
+
+    <string name="find_id_dont_regist">가입된 정보가 없습니다.</string>
+    <string name="find_id_dont_notice">검색이 되지 않을 경우 녹십자헬스케어\n고객지원센터로 문의 주시기 바랍니다.</string>
+
+    <string name="find_pwd_result_message">비밀 번호가 발송 되었습니다.</string>
+
+    <string name="green_cross_phone_num">1588-2711 (평일 9:00 ~ 18:00)</string>
+    <string name="active_val_select">활동량 선택</string>
+
+    <string name="join_step3_have_disease">보유 질환 (중복 선택 가능)</string>
+    <string name="join_step3_active_type1">주로 앉아 있음</string>
+    <string name="join_step3_active_type1_desc">하루 중 대부분을 앉아서 보내며 운동량\n이 거의 없음</string>
+    <string name="join_step3_active_type2">약간 활동적</string>
+    <string name="join_step3_active_type2_desc">하루 중 상당 부분 서서 보내거나 (교사, 판매원)\n가벼운 운동을 꾸준히 하는 편</string>
+    <string name="join_step3_active_type3">활동적</string>
+    <string name="join_step3_active_type3_desc">하루 중 상당 부분을 신체 활동을 하면서 보내거나\n(트레이너, 우체부) 강도 높은 운동을 꾸준히 함</string>
+
+
+    <string name="text_alert_bluetooth_band">활동량계 장치를 등록해제 하시겠습니까?</string>
+    <string name="text_alert_bluetooth_weight">체중계/체지방계 장치를 등록해제 하시겠습니까?</string>
+    <string name="text_alert_bluetooth_pressure">혈압계 장치를 등록해제 하시겠습니까?</string>
+    <string name="text_alert_bluetooth_sugar">혈당계 장치를 등록해제 하시겠습니까?\n혈당계 장치 해제는 안드로이드 설정 → 연결 → 블루투스에서 해제하여야 합니다.</string>
+    <string name="text_alert_bluetooth_pressure2">혈압계 장치를 등록해제 하시겠습니까?</string> <!--\n혈압계 장치 해제는 안드로이드 설정 → 연결 → 블루투스에서 해제하여야 합니다.-->
+    <string name="text_alert_bluetooth_caresens_pairing">CareSens 혈당계 장치는 먼저 블루투스 설정에서 장치와 페어링 및 Pin code를 입력 후 등록가능합니다.</string>
+    <string name="text_alert_bluetooth_and_pairing">혈압계 장치는 먼저 블루투스 설정에서 장치와 페어링 후 등록가능합니다.</string>
+    <string name="text_alert_bluetooth_le_permission">블루투스 LE를 검색하기 위해 해당 권한이 필요합니다.</string>
+    <string name="text_alert_bluetooth_on_message">해당 기능을 진행하기위해 블루투스를 켜주세요.</string>
+    <string name="text_alert_bluetooth_pairing">해당 단말은 페어링 모드에서 페어링이 필요합니다.(설정창에서 페어링해주세요.)</string>
+    <string name="text_alert_bluetooth_unsupported_device">해당 단말기는 블루투스를 지원하지 않습니다.</string>
+    <string name="text_alert_bluetooth_le_non_support">해당 단말기는 블루투스 LE 를 지원하지 않습니다.</string>
+    <string name="text_alert_bluetooth_search_message">검색중</string>
+    <string name="text_alert_bluetooth_device_search_message">장치를 검색중입니다.</string>
+    <string name="text_alert_bluetooth_Abnormal_approach">비정상적인 접근입니다.</string>
+
+
+    <string name="text_network_data_rec_fail">데이터 수신에 실패하였습니다.</string>
+    <string name="text_network_data_send_fail">"데이터 전송에 실패 하였습니다.</string>
+    <string name="text_network_data_fail">데이터 수신에 실패</string>
+    <string name="text_network_error">네트워크 연결 상태를 확인해주세요.</string>
+    <string name="text_network_non_data">데이터가 없습니다.</string>
+    <string name="text_network_init_data_conf">초기 데이터를 구성하고 있습니다.</string>
+
+
+    <string name="join_step3_can_multi_select">(중복 선택 가능)</string>
+    <string name="join_step3_hyperlipidemia_type">고지혈</string>
+    <string name="join_step3_high_blood">고혈압 </string>
+    <string name="join_step3_no1_diabetes">당뇨</string>
+    <string name="join_step3_no2_diabetes">비만</string>
+
+    <string name="join_step3_do_you_smoke">흡연 하십니까?</string>
+    <string name="join_step3_question">선택하신 질환과 관련하여 복약 중이신 약이 있습니까?</string>
+    <string name="join_step3_error_validation1">보유질환을 선택해 주세요.</string>
+    <string name="join_step3_error_validation2">복약 여부를 선택해 주세요.</string>
+    <string name="join_step3_complete">가입 완료</string>
+    <string name="join_step3_ecomplete">수정 완료</string>
+
+
+    <string name="device_not_reg_message">단말기가 등록되지 않았습니다.</string>
+    <string name="device_connecting_message">단말기와 연결중 입니다.</string>
+    <string name="device_connected_message">단말기와 연결이 완료되었습니다.</string>
+    <string name="device_disconnected_message">단말기와 연결이 끊어졌습니다.</string>
+    
+    <string name="permission_setting_access">권한 설정 후 이용 가능합니다.</string>
+    <string name="permission_access_success">권한이 정상적으로 승인되었습니다.</string>
+
+    <string name="connect_error_message">Connect 하기전에 setUserInfo()먼저 실행해주세요.</string>
+
+</resources>

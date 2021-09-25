@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <com.greencross.greencare.component.CFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="운동데이터에 사용 할 구글피트니스 또는 활동량계 디바이스를 선택하여주세요." />
+
+
+    <Button
+        android:id="@+id/step_source_google_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_next_en"
+        android:textColor="@color/colorWhite"
+        android:text="@string/text_googlefit" />
+
+    <Button
+        android:id="@+id/step_source_band_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_next_en"
+        android:textColor="@color/colorWhite"
+        android:text="@string/text_croise" />
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/dialog_listview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minWidth="100dp">-->
+
+    <!--</ListView>-->
+</LinearLayout>

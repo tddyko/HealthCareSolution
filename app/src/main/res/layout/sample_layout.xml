@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- 라인그리기 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDarkGray"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_time_picker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="시간 picker" />
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_date_picker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="달력 picker" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_draw_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="그림그리기 샘플" />
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_draw_view2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="그림그리기 샘플2" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_dummy_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="SugarInput 액티비티 띄우기" />
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_dummy_fragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="SugarInput 플래그먼트 처리" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_radar_chart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="레이더차트" />
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_swipe_list_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Swipe메뉴리스트뷰" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_camera_exam"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="카메라" />
+
+                <com.greencross.greencare.component.CFontButton
+                    android:id="@+id/sample_sugar_manage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="혈당관리" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <Button
+                    android:id="@+id/sample_alert"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="AlertDialog" />
+
+                <Button
+                    android:id="@+id/sample_test_connection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="네트워크연결" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <Button
+                    android:id="@+id/db_import_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="DB Import" />
+
+                <Button
+                    android:id="@+id/db_export_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="DB Export" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="입력페이지 이동" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/input_walk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/text_work" />
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/input_sugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="혈당" />
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/input_sugar_medi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="혈당투약" />
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/input_pressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/text_pressure" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/input_pressure_medi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="혈압투약" />
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/input_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="체중" />
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/input_water"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/text_water" />
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/btn_bluetooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="블루투스 " />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="메인페이지 이동" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/sample_main_card_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="홈" />
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/main_walk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/text_work" />
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/main_sugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="혈당" />
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/main_pressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="혈압" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/main_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+
+                        android:text="체중" />
+
+                    <Button
+                        android:id="@+id/main_water"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/text_water" />
+
+                    <com.greencross.greencare.component.CFontButton
+                        app:font="@string/NotoSansKRBold"
+                        android:id="@+id/main_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="식사" />
+
+                    <com.greencross.greencare.component.CFontButton
+                        app:font="@string/NotoSansKRRegular"
+                        android:textStyle="bold"
+                        android:id="@+id/main_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="@string/text_setting" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+
+                    <com.greencross.greencare.component.CFontButton
+                        android:id="@+id/test_alram_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+
+                        android:text="알람" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <!--바형 라디오 예제 -->
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.greencross.greencare.component.CFontRadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="그래프"
+                        style="@style/common_radio_style_left"/>
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        style="@style/common_radio_style_right"
+                        android:text="히스토리" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/period_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <com.greencross.greencare.component.CFontRadioButton
+                        android:id="@+id/period_radio_btn_day"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/common_radio_style_left"
+                        android:checked="true"
+                        android:text="일간"
+                        />
+
+                    <com.greencross.greencare.component.CFontRadioButton
+                        android:id="@+id/period_radio_btn_week"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/common_radio_style_middle"
+                        android:gravity="center"
+                        app:font="@string/NotoSansKRBold"
+                        android:text="주간" />
+
+                    <com.greencross.greencare.component.CFontRadioButton
+                        android:id="@+id/period_radio_btn_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/common_radio_style_right"
+                        android:text="월간" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <!-- font typeface 적용 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/sample_type_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="setTypefaceNotoSansKRBold 코드로 적용 "
+                    android:layout_marginTop="10dp"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    app:font="@string/NotoSansKRBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NotoSansKRBold.otf xml Typeface "
+                    android:layout_marginTop="10dp"/>
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/sample_type_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="setTypefaceNotoSansKRBold 코드로 적용 "
+                    style="@style/common_edittext_style"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+
+            </View>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

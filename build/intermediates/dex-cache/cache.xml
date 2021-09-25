@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/kominhyuk/Project/new-greencare/app/libs/pwb_android_sdk_release_1.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b63da08444d519efd3978818a717f3e079f54c7f">
+        <dex dex="/Users/kominhyuk/Project/new-greencare/app/build/intermediates/transforms/dex/debug/folders/1000/2/pwb_android_sdk_release_1.0.1_19d111314e9a974c65f7c9cd081a2ad2ac2c2fc8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kominhyuk/Project/new-greencare/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/kominhyuk/Project/new-greencare/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8e4d6dfcdb0fdc18f8db916f3d7994b06c7e71cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kominhyuk/Project/new-greencare/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a2e089bc2f736593c0d89acf4858a98d34e8fd9">
+        <dex dex="/Users/kominhyuk/Project/new-greencare/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ff83d992e57e93c3ea1ad1dc2ebc0bfc8141d595/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kominhyuk/Project/new-greencare/app/libs/pwb_android_sdk_release_1.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b63da08444d519efd3978818a717f3e079f54c7f">
+        <dex dex="/Users/kominhyuk/Project/new-greencare/app/build/intermediates/pre-dexed/release/pwb_android_sdk_release_1.0.1_19d111314e9a974c65f7c9cd081a2ad2ac2c2fc8.jar" />
+    </item>
+
+</items>

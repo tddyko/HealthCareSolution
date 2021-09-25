@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    style="@style/common_parent_style"
+    tools:context="com.greencross.greencare.MainActivity"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontTextView
+                style="@style/common_textview_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_dayusecalory" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox_caledit"
+                    style="@style/common_checkbox_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp" />
+
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/step_edittext"
+                    style="@style/common_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="5"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingRight="15dp"
+                    android:textAlignment="textEnd" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    style="@style/common_textview_ea"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="kcal"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontTextView
+                style="@style/common_textview_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_daygoalstep" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox_stepedit"
+                    style="@style/common_checkbox_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp" />
+
+                <com.greencross.greencare.component.CFontEditText
+                    android:id="@+id/step_target_edittext"
+                    style="@style/common_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="5"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingRight="15dp"
+                    android:textAlignment="textEnd" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/CFontTextView8"
+                    style="@style/common_textview_ea"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="steps"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontTextView
+                style="@style/common_textview_fields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_datasourceset" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <com.greencross.greencare.component.CFontTextView
+                style="@style/common_textview_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_googlefit" />
+
+            <CheckBox
+                android:id="@+id/checkbox_google"
+                style="@style/common_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <com.greencross.greencare.component.CFontTextView
+                style="@style/common_textview_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_croise" />
+
+            <CheckBox
+                android:id="@+id/checkbox_urban"
+                style="@style/common_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <com.greencross.greencare.component.CFontButton
+            android:id="@+id/walk_input_save_btn"
+            style="@style/common_button_input"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/button_on_off"
+            android:enabled="false"
+            android:text="@string/text_save"
+            android:textColor="@color/colorWhite"
+            app:font="@string/NotoSansKRBold" />
+
+    </LinearLayout>
+</LinearLayout>

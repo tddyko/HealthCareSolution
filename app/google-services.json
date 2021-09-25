@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "789010562305",
+    "firebase_url": "https://green-care-8a4e8.firebaseio.com",
+    "project_id": "green-care-8a4e8",
+    "storage_bucket": "green-care-8a4e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789010562305:android:61d417854cab4ea6",
+        "android_client_info": {
+          "package_name": "com.greencross.greencare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789010562305-73ioe612o596b6shr5d4fl514nt57r3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.greencross.greencare",
+            "certificate_hash": "3463dea81cb0f7b44fb411c9bc43c14b87186521"
+          }
+        },
+        {
+          "client_id": "789010562305-rd8c3crl78d794ohbplhcdnhqskad9ku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRsOr0nwLbGNl63hk_56tRXHrtqhhuTVg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789010562305-rd8c3crl78d794ohbplhcdnhqskad9ku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

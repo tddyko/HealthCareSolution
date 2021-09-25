@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal"
+    tools:context="com.greencross.greencare.MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.greencross.greencare.component.CFontRadioButton
+            android:id="@+id/btn_weight_graph"
+            style="@style/common_radio_style_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="그래프"
+            app:font="@string/NotoSansKRBold"/>
+
+        <com.greencross.greencare.component.CFontRadioButton
+            android:id="@+id/btn_weight_history"
+            style="@style/common_radio_style_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="히스토리"
+            app:font="@string/NotoSansKRBold"/>
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_weight_history"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorBackgound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view20"
+        app:layout_constraintVertical_bias="1.0"
+        android:visibility="gone">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorGray"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <com.greencross.greencare.component.swipeListview.SwipeMenuListView
+            android:id="@+id/weight_history_listview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </com.greencross.greencare.component.swipeListview.SwipeMenuListView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_weight_graph"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorBackgound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view20"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/pre_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/period_date_textview"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/cal_arrow_left" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/period_date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2017.03.01"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageButton
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/period_date_textview"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/cal_arrow_right" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline17"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.0"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.greencross.greencare.component.CFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center_vertical"
+                    android:text="체중"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorBlack" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:textSize="8sp"
+                    android:text="(kg)"
+                    />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/chart_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="textEnd"
+                    android:gravity="center_vertical"
+                    android:text="주간 : 요일 별 평균 데이터"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="-8dp"
+                android:layout_height="match_parent">
+
+                <com.greencross.greencare.charting.charts.WeightChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/seekBar2"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tvXMax"
+                    android:layout_weight="1"
+                    android:max="500"
+                    android:paddingBottom="12dp" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvXMax"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/seekBar1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="500"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tvYMax"
+                    android:layout_weight="1"
+                    android:max="200"
+                    android:paddingBottom="12dp" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvYMax"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/seekBar2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="500"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.42"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="272dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline17">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    >
+
+                    <com.greencross.greencare.component.CFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_bodyfatrate"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <com.greencross.greencare.component.CFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:textSize="8sp"
+                        android:text="(%)"
+                        />
+                </LinearLayout>
+
+
+
+                <ImageButton
+                    android:id="@+id/weight_modal_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:src="@drawable/btn_plus"
+                    android:layout_alignParentRight="true"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:text="체성분 상세보기"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_toLeftOf="@id/weight_modal_btn"/>
+
+
+            </RelativeLayout>
+
+            <com.greencross.greencare.charting.charts.WeightChart
+                android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="-4dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/seekBar2"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tvXMax"
+                    android:layout_weight="1"
+                    android:max="500"
+                    android:paddingBottom="12dp" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvXMax3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/seekBar1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="500"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/seekBar4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tvYMax"
+                    android:layout_weight="1"
+                    android:max="200"
+                    android:paddingBottom="12dp" />
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvYMax4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/seekBar2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="500"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.68"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="390dp" />
+
+        <RadioGroup
+            android:id="@+id/period_radio_group"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline25">
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/period_radio_btn_day"
+                style="@style/common_radio_style_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="일간" />
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/period_radio_btn_week"
+                style="@style/common_radio_style_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="주간" />
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/period_radio_btn_month"
+                style="@style/common_radio_style_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="월간" />
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/period_radio_btn_year"
+                style="@style/common_radio_style_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="년간" />
+        </RadioGroup>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/period_radio_group">
+
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="최근 측정 (3일전)"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/view21"
+                app:layout_constraintLeft_toRightOf="@+id/view25"
+                app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="목표 체중"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toTopOf="@+id/view23"
+                app:layout_constraintLeft_toRightOf="@+id/view25"
+                app:layout_constraintTop_toBottomOf="@+id/view21"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="70.40"
+                android:textColor="@color/colorMain"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView53"
+                app:layout_constraintLeft_toRightOf="@+id/textView53" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center_vertical"
+                android:text="kg"
+                android:textColor="@color/colorLightBlue"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView53"
+                app:layout_constraintLeft_toRightOf="@+id/textView54" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="kg"
+                android:textColor="@color/colorLightDanger"
+                app:layout_constraintBottom_toTopOf="@+id/view23"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center_vertical"
+                android:text="+0.30"
+                android:textColor="@color/colorDanger"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView58"
+                app:layout_constraintRight_toLeftOf="@+id/textView56" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:text="목표 대비"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView53"
+                app:layout_constraintRight_toLeftOf="@+id/textView57" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="현재 체중"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintRight_toLeftOf="@+id/view27"
+                app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="kg"
+                android:textSize="18dp"
+                android:textColor="@color/colorLightBlue"
+                app:layout_constraintRight_toLeftOf="@+id/view27"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center_vertical"
+                android:text="70.78"
+                android:textSize="18dp"
+                android:textColor="@color/colorMain"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
+                app:layout_constraintRight_toLeftOf="@+id/textView20" />
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/colorGray"
+                app:layout_constraintBottom_toTopOf="@+id/guideline26"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorGray"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/view25"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/view27"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/view23"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:background="@color/colorGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.6" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

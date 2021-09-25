@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.greencross.greencare.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@color/colorBackgound"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/pre_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/cal_arrow_left" />
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/period_date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="2017.03.01"
+                android:textColor="@color/colorBlack" />
+
+            <ImageButton
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/cal_arrow_right" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/type_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/radio_btn_calory"
+                style="@style/common_radio_style_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:checked="true"
+                android:text="칼로리"
+                app:font="@string/NotoSansKRBold" />
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/radio_btn_step"
+                style="@style/common_radio_style_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="걸음"
+                app:font="@string/NotoSansKRBold" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="400"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/seekBar1">
+
+                    <com.greencross.greencare.component.CFontTextView
+                        android:id="@+id/chart_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="8sp"
+                        android:text="kcal"
+                        />
+
+                    <com.greencross.greencare.charting.charts.BarChart
+                        android:id="@+id/chart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/period_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/period_radio_btn_day"
+                style="@style/common_radio_style_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:checked="true"
+                android:text="일간" />
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/period_radio_btn_week"
+                style="@style/common_radio_style_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="주간" />
+
+            <com.greencross.greencare.component.CFontRadioButton
+                android:id="@+id/period_radio_btn_month"
+                style="@style/common_radio_style_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="월간" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.greencross.greencare.component.CFontTextView
+                android:id="@+id/tvActiveTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="활동 소모 칼로리"
+                android:textColor="@color/colorBlack"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right">
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvActiveValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2,610"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorMain"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvActiveValueaTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kcal"
+                    android:textSize="20dp"
+                    app:font="@string/KelsonSansLight"
+                    android:textColor="@color/colorLightBlue"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textSize="20dp"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvTargetValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7,000"
+                    android:textSize="20dp"/>
+
+                <com.greencross.greencare.component.CFontTextView
+                    android:id="@+id/tvTargetValueTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Kcal"
+                    android:textSize="20dp"
+                    app:font="@string/KelsonSansLight"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/textline"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_st1"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxTitle01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="목표달성률"
+                            android:textSize="10dp"/>
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxValue01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0%"
+                            android:textColor="@color/colorMain"
+                            android:textSize="14dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/textline"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:id="@+id/IvStepBoxImage02"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:src="@drawable/icon_st2" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxTitle02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="총활동 시간"
+                            android:textSize="10dp" />
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxValue02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="1분"
+                            android:textColor="@color/colorMain"
+                            android:textSize="14dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/textline"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:id="@+id/IvStepBoxImage03"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_st3" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxTitle03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="활동 소모 칼로리 비교"
+                            android:textSize="10dp" />
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxValue03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="삼계탕0.5인분"
+                            android:textColor="@color/colorMain"
+                            android:singleLine="true"
+                            android:autoText="true"
+                            android:textSize="14dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/textline"
+                    android:padding="7dp">
+
+                    <ImageView
+                        android:id="@+id/IvStepBoxImage04"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_st4_1" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxTitle04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="최근 심박수"
+                            android:textSize="10dp" />
+
+                        <com.greencross.greencare.component.CFontTextView
+                            android:id="@+id/tvStepBoxValue04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="-"
+                            android:textColor="@color/colorMain"
+                            android:textSize="14dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
